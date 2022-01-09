@@ -87,7 +87,7 @@ class TextCleaner(TextCleanerBase):
                 .apply(self.normalize_hashtag) \
                 .apply(self.remove_specialchar)
 
-pipeline_fp = Path('./pipe.joblib')
+pipeline_fp = Path('pipe.joblib')
 
 full_pipeline = joblib.load(pipeline_fp)
 
