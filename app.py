@@ -88,9 +88,7 @@ class TextCleaner(TextCleanerBase):
                 .apply(self.remove_specialchar)
 
 pipeline_fp = Path('./tool/pipe.joblib')
-=======
-pipeline_fp = Path(__file__).parents[1] / 'pipe.joblib'
->>>>>>> 60fd1d444f206379101065e008ab823b9ee82157:tool/app.py
+# pipeline_fp = Path(__file__).parents[1] / 'pipe.joblib'
 
 full_pipeline = joblib.load(pipeline_fp)
 
