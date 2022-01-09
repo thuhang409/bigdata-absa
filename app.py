@@ -223,8 +223,8 @@ elif st.session_state.mode == modes[1]:
         if state.df is None:
             return
         row = state.df.loc[doc_id]
-        # state.update({k: row[k] if isinstance(row[k], str)
-        #               else 'dne' for k in all_keys})
+        state.update({k: row[k] if isinstance(row[k], str)
+                      else 'dne' for k in all_keys})
         
 
     if uploaded_file and st.session_state.prev_fileid != uploaded_file.id:
