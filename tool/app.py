@@ -89,7 +89,7 @@ class TextCleaner(TextCleanerBase):
 
 # pipeline_fp =
 
-full_pipeline = joblib.load('/pipe.joblib')
+full_pipeline = joblib.load('/pipe.joblib', 'rb')
 
 
 def classify_sentence(sentence):
