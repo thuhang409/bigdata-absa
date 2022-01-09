@@ -307,7 +307,7 @@ elif st.session_state.mode == modes[1]:
         st.selectbox('Choose document', doc_ids,
                      key='doc_id', on_change=refresh)
         current_doc = df.loc[doc_id]
-        st.write(current_doc[0])
+        st.write(current_doc[1])
         st.write(f'**{label_decoder(current_doc[2:])}**')
 
     if st.session_state.df is not None:
