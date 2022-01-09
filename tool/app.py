@@ -87,9 +87,9 @@ class TextCleaner(TextCleanerBase):
                 .apply(self.normalize_hashtag) \
                 .apply(self.remove_specialchar)
 
-pipeline_fp = Path('pipe.joblib')
+# pipeline_fp =
 
-full_pipeline = joblib.load(pipeline_fp)
+full_pipeline = joblib.load( Path('pipe.joblib'))
 
 
 def classify_sentence(sentence):
