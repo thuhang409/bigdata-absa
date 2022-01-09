@@ -2,7 +2,7 @@ import re
 from io import StringIO
 from pathlib import Path
 
-import emoji
+
 import joblib
 import sklearn
 import unicodedata
@@ -11,7 +11,6 @@ import pandas as pd
 import streamlit as st
 
 from functools import partial
-from emoji import get_emoji_regexp
 from flashtext import KeywordProcessor
 from sklearn.base import BaseEstimator, TransformerMixin
 
